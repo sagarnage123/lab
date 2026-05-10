@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
+    </script>
+        
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js" >
+    </script>
+
+</head>
+<body>
+
+    <div style="display: flex; gap: 100px; min-height: 50vw;">
+        <nav style="background-color: black; color: white; display: flex; justify-content: center ; align-items: center; padding: 10px; height: 25vh;
+        flex-direction: column;" id="nav">
+            <button style="background-color: red;" id="btn">
+                Click me to make color red
+            </button>
+            <button style="background-color: green;" id="btn2">
+                Click me to make color green
+            </button>
+            <ul style=" display: flex; justify-content: center ; align-items: center; flex-direction: column; margin: auto;">
+                <li>item1</li>
+                <li>item2</li>
+                <li>item2</li>
+            </ul>
+        </nav>
+        <div>
+            <h1>
+                I am the centre of the page
+            </h1>
+        </div>
+
+    </div>
+
+    <script>
+        $(document).ready(function (){
+
+            $("#btn").click(function(){
+                $("#nav").css("background-color","red");
+            })
+
+            $("#btn2").click(function(){
+                $("#nav").css("background-color","green");
+            })
+
+        })
+    </script>
+    
+</body>
+</html>
